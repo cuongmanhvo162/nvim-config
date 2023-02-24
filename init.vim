@@ -3,10 +3,6 @@ call plug#begin('~/AppData/Local/nvim/plugged')
 " Files tree navigation
 Plug 'preservim/nerdtree'
 
-" Theming for neovim
-Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
-
 " Coc vim for autocompletion
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
@@ -18,15 +14,14 @@ Plug 'junegunn/fzf', {'dir': '~/.fzf','do': './install --all'}
 Plug 'junegunn/fzf.vim' " needed for previews
 Plug 'antoinemadec/coc-fzf', {'branch': 'release'}
 
-
 " Auto add pairs
 Plug 'jiangmiao/auto-pairs'
 
 " Git integration
 Plug 'tpope/vim-fugitive'
 
-" Markdown preview
-Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
+" Git Blame
+Plug 'APZelos/blamer.nvim'
 
 
 call plug#end()
